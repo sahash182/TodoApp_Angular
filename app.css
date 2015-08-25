@@ -1,3 +1,6 @@
+li{
+	list-position: inline;
+}
 .navbar{
 	background-color: rgba(0, 0, 255, .2);
 }

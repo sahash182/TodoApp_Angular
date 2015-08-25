@@ -1,4 +1,5 @@
 angular.module('starter.controllers', [])
+
 .controller("MainCtrl", ['$scope', '$rootScope', function ($scope, $rootScope) {
     $scope.term = "cellar door";
     $scope.showAlert = function() {
@@ -20,4 +21,18 @@ angular.module('starter.controllers', [])
     $scope.todos.splice(index,1);
 
   }
+}])
+
+.controller("ListsCtrl", ['$scope', '$rootScope', function ($scope, $rootScope) {
+
+  $scope.lists = [{title:"Clean car"}, {title:"Do homework"}, {title:"Do Laundry"}]
+  $scope.show = function() {
+   $scope.show({title:$scope.lists})
+  }
+  $scope.delete = function(lists){
+    var index = $scope.lists.indexOf(lists);
+    $scope.lists.splice(index,1);
+
+  }
+
   }])
