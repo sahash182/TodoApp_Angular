@@ -1,0 +1,28 @@
+	<!-- nav bar -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">
+        <img alt="ToDo" width="20px" src="http://globe-views.com/dcim/dreams/pencil/pencil-06.jpg">
+        <ul>
+
+        </ul>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- todo form well -->
+<div ng-controller="TodoCtrl"class="well col-xs-8 offset" autofocus id="todo-well" >
+  	<input ng-model="newTodo" type="text" placeholder="Add  your to do list" class="form-control" id="todo-list" />{{newTodo}}
+  	<button ng-click="addNew()" class="btn btn-success pull-right">Submit</button><br>
+  		<legend>{{ todo }}</legend>
+  				<legend>You have {{todos.length}} things to do. </legend>
+  				<b><li ng-repeat="todo in todos">
+
+  					<div class="well">{{todo.title}}
+  						<a ng-click="delete(todo)" class="glyphicon glyphicon-remove pull-right"></a></li></b>
+
+  					</div>
+  			
+</div>

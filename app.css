@@ -1,0 +1,10 @@
+.navbar{
+	background-color: rgba(0, 0, 255, .2);
+}
+#todo-well{
+	background-color: rgba(0, 0, 255, .2);
+	display: block;
+	margin: 0 auto;
+	float: none;
+	box-shadow: 10px 10px 5px #888888;
+}
